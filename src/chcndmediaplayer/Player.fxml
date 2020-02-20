@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chcndmediaplayer.PlayerController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@player.css" />
+          </stylesheets>
+         <children>
+            <AnchorPane fx:id="vizPane" layoutY="371.0" prefHeight="224.0" prefWidth="800.0">
+               <children>
+                  <Pane layoutY="130.0" prefHeight="104.0" prefWidth="800.0" style="-fx-background-color: #CCCCCC;">
+                     <children>
+                        <Slider fx:id="timeSlider" onMousePressed="#handleSliderMousePressed" onMouseReleased="#handleSliderMouseReleased" prefHeight="16.0" prefWidth="522.0" style="-fx-background-color: #CCCCCC;" />
+                        <Button layoutX="310.0" layoutY="66.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlePlay" prefHeight="25.0" prefWidth="60.0" text="Play" />
+                        <Button layoutX="370.0" layoutY="66.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlePause" prefHeight="25.0" prefWidth="60.0" text="Pause" />
+                        <Button layoutX="430.0" layoutY="66.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleStop" prefHeight="25.0" prefWidth="60.0" text="Stop" />
+                        <Text fx:id="lengthText" layoutX="662.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="140.0" />
+                        <Text fx:id="currentText" layoutX="522.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="140.0" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="315.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/play.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="438.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/stop.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="375.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/next.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+            <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="400.0" layoutX="200.0" layoutY="79.0" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="79.0" />
+            <Pane prefHeight="79.0" prefWidth="800.0" style="-fx-background-color: #CCCCCC;">
+               <children>
+                  <Button layoutX="60.0" layoutY="53.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleOpen" prefHeight="25.0" prefWidth="60.0" text="Open" />
+                  <Button fx:id="login" layoutY="53.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="60.0" text="Login" />
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/login.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="65.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/open.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="750.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/setting2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="692.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/about.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="740.0" layoutY="53.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Save" />
+                  <Button fx:id="about" layoutX="680.0" layoutY="53.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleAbout" prefHeight="25.0" prefWidth="60.0" text="About" />
+                  <Text layoutX="309.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Media Player">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="filePathText" layoutX="121.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="559.0" />
+                  <Text fx:id="errorText" fill="RED" layoutX="120.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="559.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

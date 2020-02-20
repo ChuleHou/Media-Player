@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61A2B1); 
+}
+

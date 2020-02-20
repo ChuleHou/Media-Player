@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="goBack" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#Back" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #CCCC;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chcndmediaplayer.AboutController">
+   <children>
+      <Label layoutX="227.0" layoutY="426.0" text="Design By Chule Hou">
+         <font>
+            <Font name="Myanmar MN" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back" layoutX="573.0" layoutY="516.0" mnemonicParsing="false" onAction="#Back" text="BACK">
+         <font>
+            <Font name="Myanmar MN" size="24.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="39.0" layoutY="51.0" prefHeight="339.0" prefWidth="722.0" style="-fx-background-color: #CCCC;" text="This is a media player for musics and movies,&#10;People can use this player to play different music and videos.&#10;After reaing this, you can press the button of back to back &#10;the home page. And continue to use the media player.&#10;&#10;&#10;I hope you can enjoy your music with this player.&#10;&#10;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chcndmediaplayer.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Text fill="#0942d3" fontSmoothingType="LCD" layoutX="165.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Please Login" textAlignment="CENTER">
+         <font>
+            <Font name="Kailasa Regular" size="45.0" />
+         </font>
+      </Text>
+      <Text layoutX="195.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="195.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextFlow layoutX="408.0" layoutY="219.0" prefHeight="35.0" prefWidth="200.0" />
+      <TextFlow layoutX="400.0" layoutY="318.0" prefHeight="43.0" prefWidth="200.0" />
+      <Line endX="100.0" layoutX="508.0" layoutY="255.0" startX="-100.0" />
+      <Button fx:id="goBack" layoutX="165.0" layoutY="433.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="90.0" text="Bcak" />
+      <Button layoutX="546.0" layoutY="433.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Login in" />
+      <Line endX="100.0" layoutX="508.0" layoutY="361.0" startX="-100.0" />
+   </children>
+</AnchorPane>

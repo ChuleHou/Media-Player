@@ -1,0 +1,18 @@
+ProjectDocumentation
+
+1.There is an abstract class is TransferScene; 
+2.There is an interface named MyFavorite, which was implemented by the class named FavoriteList;
+3.The another inteface named Visualizer, which is implemented by the class named VisualizerModel, the program also can add more model about the visualizerModel to display different model
+4.the collection class is “hashmap” in the transferScene class.
+5.the try-catch block syntax to handle exception in the transferScene class.
+6.There are three scene, Login.fxml, Player.fxml and About.fxml transform mutually.
+7.The program can save and run different media files,such as “.mp3”,”.mp4”.
+
+
+player function /Process introduction:
+1:Find a media file to open, both ".mp3" and ".mp4" can be open.
+2:Press the different button to get different effect.
+3:Press the play button to play the media file, press the pause button to pause the media file and press the stop button to stop the media file.
+4:Press the Login button to change scene, to get a new scene and press the back button to back to the home page.
+5:Press the About button to get more information about the media player.
+6:Press the save button to save the media file to the local file.
